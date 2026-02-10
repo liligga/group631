@@ -32,6 +32,7 @@ class Car:
             raise ValueError("Максимальная скорость не может быть меньше 0")
         self.__max_speed = value
 
+
 car_subaru = Car('silver', 'Subaru Forester')
 print(car_subaru.model)
 car_subaru.drive_to("Karakol")
