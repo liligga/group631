@@ -1,9 +1,11 @@
+from lessons.lesson_2 import Car
+
 class Money:
     def __init__(self, amount):
         self.amount = amount
 
-    def __str__(self):
-        return f"<Money amount={self.amount}>"
+    # def __str__(self):
+    #     return f"<Money amount={self.amount}>"
 
     # equal -> ==
     def __eq__(self, other):
@@ -36,14 +38,16 @@ class Money:
         new_money_object = Money(amount=new_amount)
         return new_money_object
 
-money_igor = Money(100)
-money_kurmanbek = Money(101)
-# money_kurmanbek = money_igor
-money_nursultan = Money(1000)
+if __name__ == "__main__":
+    money_igor = Money(100)
+    money_kurmanbek = Money(101)
+    # money_kurmanbek = money_igor
+    money_nursultan = Money(1000)
 
-print(money_igor)
-print(money_igor == money_kurmanbek)
-print(money_igor < money_kurmanbek)
-print(money_igor > money_kurmanbek)
-total_money = money_igor + money_kurmanbek + money_nursultan
-print(total_money)
+    print(money_igor)
+    print(money_igor == money_kurmanbek)
+    print(money_igor < money_kurmanbek)
+    print(money_igor > money_kurmanbek)
+    total_money = money_igor + money_kurmanbek + money_nursultan
+    print(total_money)
+    car1 = Car("silver", "Subaru Forester")

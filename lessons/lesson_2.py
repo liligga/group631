@@ -21,18 +21,18 @@ class Bus(Car):
 class Truck(Car):
     pass
 
+if __name__ == "__main__":
+    car_subaru = Car('silver', 'Subaru Forester')
+    print(car_subaru.model)
+    car_subaru.drive_to("Bishkek")
+    bus_42 = Bus("green", "MAN", 42)
+    print(bus_42.model)
+    # bus_42.drive_to("Bishkek")
+    print(type(bus_42))
+    print(isinstance(bus_42, Car))
 
-car_subaru = Car('silver', 'Subaru Forester')
-print(car_subaru.model)
-car_subaru.drive_to("Bishkek")
-bus_42 = Bus("green", "MAN", 42)
-print(bus_42.model)
-# bus_42.drive_to("Bishkek")
-print(type(bus_42))
-print(isinstance(bus_42, Car))
-
-cars = [car_subaru, bus_42]
-for car in cars:
-    car.drive_to("Karakol")
+    cars = [car_subaru, bus_42]
+    for car in cars:
+        car.drive_to("Karakol")
 
 
